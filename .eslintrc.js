@@ -1,0 +1,39 @@
+module.exports = {
+    env: {
+        browser: true,
+        es2021: true
+    },
+    extends: [
+        'plugin:react/recommended',
+        'standard-with-typescript',
+        'plugin:i18next/recommended'
+    ],
+    overrides: [],
+    parserOptions: {
+        project: ['./tsconfig.json'],
+        ecmaVersion: 'latest',
+        sourceType: 'module'
+    },
+    plugins: [
+        'react',
+        'i18next'
+    ],
+    rules: {
+        '@typescript-eslint/prefer-nullish-coalescing': 'off',
+        'react/jsx-indent': [2, 4],
+        'react/jsx-indent-props': [2, 4],
+        indent: [2, 4],
+        'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+        'import/no-unresolved': 'off',
+        '@typescript-eslint/strict-boolean-expressions': 'off',
+        'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/indent': [2, 4],
+        '@typescript-eslint/no-floating-promises': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/naming-convention': 'off',
+        'i18next/no-literal-string': ['warn', { markupOnly: true }]
+    },
+    globals: {
+        __IS_DEV__: true
+    }
+}
