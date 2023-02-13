@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher'
 import { CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { BugButton } from 'app/providers/ErrorBoundary'
 
 interface SidebarProps {
     className?: string
@@ -17,6 +18,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
     return (
         <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
             <CustomButton onClick={onToggle}>Toggle</CustomButton>
+            <BugButton/>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
                 <LangSwitcher className={cls.lang}/>

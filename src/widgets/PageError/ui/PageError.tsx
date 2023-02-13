@@ -1,0 +1,22 @@
+import { classNames } from 'shared/lib/classNames/classNames'
+import cls from './PageError.module.scss'
+import { useTranslation } from 'react-i18next'
+import { CustomButton } from 'shared/ui/CustomButton/CustomButton'
+
+interface PageErrorProps {
+    className?: string
+}
+
+export const PageError = ({ className }: PageErrorProps) => {
+    const { t } = useTranslation()
+    const reloadPage = () => {
+        window.location.reload()
+    }
+
+    return (
+        <div className={classNames(cls.PageError, {}, [className])}>
+            <p>{t('Something went wrong')}</p>
+            <CustomButton onClick={reloadPage}>{t('Reload page')}</CustomButton>
+        </div>
+    )
+}
