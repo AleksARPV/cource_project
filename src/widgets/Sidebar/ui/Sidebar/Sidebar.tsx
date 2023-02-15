@@ -16,8 +16,10 @@ export const Sidebar = ({ className }: SidebarProps) => {
         setCollapsed(prevState => !prevState)
     }
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <CustomButton onClick={onToggle}>Toggle</CustomButton>
+        <div
+            data-testid='sidebar'
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+            <CustomButton data-testid='sidebar-toggle' onClick={onToggle}>Toggle</CustomButton>
             <BugButton/>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
