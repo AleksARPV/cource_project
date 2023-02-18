@@ -1,6 +1,9 @@
 {
-  "Language": "РУС",
+  "Language": "Русский",
   "Page not found": "Страница не найдена",
   "Something went wrong": "Произошла непредвиденная ошибка",
-  "Reload page": "Перезагрузить страницу"
+  "Reload page": "Перезагрузить страницу",
+  "LangAbbreviation": "РУС",
+  "Main Page": "Главная страница",
+  "About": "О сайте"
 }

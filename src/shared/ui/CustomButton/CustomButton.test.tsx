@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { CustomButton, ThemeButton } from 'shared/ui/CustomButton/CustomButton'
+import { ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
 
 describe('CustomButton', () => {
     test('Button render', () => {
@@ -8,7 +8,7 @@ describe('CustomButton', () => {
     })
 
     test('Button render theme', () => {
-        render(<CustomButton theme={ThemeButton.CLEAR}>Test</CustomButton>)
+        render(<CustomButton theme={ButtonType.CLEAR}>Test</CustomButton>)
         expect(screen.getByText('Test')).toHaveClass('clear')
         screen.debug()
     })

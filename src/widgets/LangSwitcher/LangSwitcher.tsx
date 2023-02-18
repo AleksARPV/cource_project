@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import React from 'react'
-import { CustomButton, ThemeButton } from 'shared/ui/CustomButton/CustomButton'
+import { ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
 import { classNames } from 'shared/lib/classNames/classNames'
 
 interface LangSwitcherProps {
     className?: string
+    short?: boolean
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation()
 
     const toggleLanguage = () => {
@@ -16,10 +17,10 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     return (
         <CustomButton
             className={classNames('', {}, [className])}
-            theme={ThemeButton.CLEAR}
+            theme={ButtonType.BACKGROUND_INVERTED}
             onClick={toggleLanguage}
         >
-            {t('Language')}
+            {t(short ? 'LangAbbreviation' : 'Language')}
         </CustomButton>
     )
 }
