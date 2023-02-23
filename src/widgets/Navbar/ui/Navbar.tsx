@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Navbar.module.scss'
-import { Modal } from 'shared/ui/Modal/Modal'
 import { useTranslation } from 'react-i18next'
-import { ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button, ButtonType } from 'shared/ui/Button/Button'
+import { LoginModal } from 'features/AuthByUserName'
 
 interface NavbarProps {
     className?: string
@@ -13,24 +13,23 @@ export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation()
     const [isAuthModal, setIsAuthModal] = useState(false)
 
-    const onToggleModal = useCallback(() => {
-        setIsAuthModal(prevState => !prevState)
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false)
     }, [])
+
+    const onShowModal = useCallback(() => {
+        setIsAuthModal(true)
+    }, [])
+
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
-            <CustomButton theme={ButtonType.CLEAR_INVERTED} className={cls.links} onClick={onToggleModal}>
+            <Button theme={ButtonType.CLEAR_INVERTED} className={cls.links} onClick={onShowModal}>
                 {t('Login')}
-            </CustomButton>
-            <Modal
+            </Button>
+            <LoginModal
                 isOpen={isAuthModal}
-                onClose={onToggleModal}
-            >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et minima porro suscipit!
-                Cupiditate, minima, similique. Autem magni quod quos, sapiente tempore vel voluptate. Accusamus
-                culpa excepturi in laboriosam modi nobis quas quis recusandae reiciendis veniam? Architecto
-                aspernatur deleniti deserunt dolor dolores doloribus, ducimus eum necessitatibus optio, recusandae
-                repudiandae voluptates.
-            </Modal>
+                onClose={onCloseModal}
+            />
         </div>
     )
 }

@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react'
-import { ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button, ButtonType } from 'shared/ui/Button/Button'
 
 describe('CustomButton', () => {
     test('Button render', () => {
-        render(<CustomButton>Test</CustomButton>)
+        render(<Button>Test</Button>)
         expect(screen.getByText('Test')).toBeInTheDocument()
     })
 
     test('Button render theme', () => {
-        render(<CustomButton theme={ButtonType.CLEAR}>Test</CustomButton>)
+        render(<Button theme={ButtonType.CLEAR}>Test</Button>)
         expect(screen.getByText('Test')).toHaveClass('clear')
         screen.debug()
     })

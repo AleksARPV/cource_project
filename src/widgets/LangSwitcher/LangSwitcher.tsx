@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import React from 'react'
-import { ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button, ButtonType } from 'shared/ui/Button/Button'
 import { classNames } from 'shared/lib/classNames/classNames'
 
 interface LangSwitcherProps {
@@ -15,12 +15,12 @@ export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
     }
     return (
-        <CustomButton
+        <Button
             className={classNames('', {}, [className])}
             theme={ButtonType.BACKGROUND_INVERTED}
             onClick={toggleLanguage}
         >
             {t(short ? 'LangAbbreviation' : 'Language')}
-        </CustomButton>
+        </Button>
     )
 }

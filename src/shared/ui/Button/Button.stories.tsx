@@ -1,19 +1,19 @@
 import React from 'react'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
 
-import { ButtonSize, ButtonType, CustomButton } from './CustomButton'
+import { Button, ButtonSize, ButtonType } from './Button'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 
 export default {
-    title: 'shared/CustomButton',
-    component: CustomButton,
+    title: 'shared/Button',
+    component: Button,
     argTypes: {
         backgroundColor: { control: 'color' }
     }
-} as ComponentMeta<typeof CustomButton>
+} as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof CustomButton> = (args) => <CustomButton {...args} />
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {

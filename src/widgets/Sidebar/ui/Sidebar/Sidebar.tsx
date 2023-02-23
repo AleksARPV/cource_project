@@ -3,7 +3,7 @@ import cls from './Sidebar.module.scss'
 import React, { useState } from 'react'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher'
-import { ButtonSize, ButtonType, CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button, ButtonSize, ButtonType } from 'shared/ui/Button/Button'
 import { BugButton } from 'app/providers/ErrorBoundary'
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { RoutePath } from 'shared/config/routeConfig/routeConfig'
@@ -25,7 +25,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <div
             data-testid='sidebar'
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <CustomButton
+            <Button
                 data-testid='sidebar-toggle'
                 onClick={onToggle}
                 className={cls.collapseBtn}
@@ -34,7 +34,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 square
             >
                 {collapsed ? '>' : '<'}
-            </CustomButton>
+            </Button>
             <div className={cls.items}>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}

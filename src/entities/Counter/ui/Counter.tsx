@@ -1,4 +1,4 @@
-import { CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button } from 'shared/ui/Button/Button'
 import { useDispatch, useSelector } from 'react-redux'
 import { counterActions } from 'entities/Counter/model/slice/counterSlice'
 import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue'
@@ -16,8 +16,8 @@ export const Counter = () => {
     return (
         <div>
             <h1 data-testid='value-title'>{counterValue}</h1>
-            <CustomButton data-testid='increment-btn' onClick={increment}>Increment</CustomButton>
-            <CustomButton data-testid='decrement-btn' onClick={decrement}>Decrement</CustomButton>
+            <Button data-testid='increment-btn' onClick={increment}>Increment</Button>
+            <Button data-testid='decrement-btn' onClick={decrement}>Decrement</Button>
         </div>
     )
 }

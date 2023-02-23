@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames'
-import cls from './CustomButton.module.scss'
+import cls from './Button.module.scss'
 import { type ButtonHTMLAttributes, type FC } from 'react'
 
 export enum ButtonType {
@@ -23,7 +23,7 @@ interface CustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     size?: ButtonSize
 }
 
-export const CustomButton: FC<CustomButtonProps> = (props) => {
+export const Button: FC<CustomButtonProps> = (props) => {
     const { className, children, theme, square, size = ButtonSize.M, ...otherProps } = props
 
     const mods: Record<string, boolean> = {

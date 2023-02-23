@@ -1,4 +1,4 @@
-import { CustomButton } from 'shared/ui/CustomButton/CustomButton'
+import { Button } from 'shared/ui/Button/Button'
 import { useEffect, useState } from 'react'
 
 interface BugButtonProps {
@@ -18,8 +18,8 @@ export const BugButton = ({ className }: BugButtonProps) => {
     }, [error])
 
     return (
-        <CustomButton onClick={toThrow}>
+        <Button onClick={toThrow}>
             Throw Error
-        </CustomButton>
+        </Button>
     )
 }
