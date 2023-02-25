@@ -8,5 +8,8 @@
   "About": "About",
   "Login": "Login",
   "Enter Password": "Enter Password",
-  "Enter Username": "Enter Username"
+  "Enter Username": "Enter Username",
+  "Authorization": "Authorization",
+  "Wrong Username or Password": "Wrong Username or Password",
+  "Logout": "Logout"
 }

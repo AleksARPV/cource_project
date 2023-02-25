@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint'],
     rules: {
+        'react/display-name': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',

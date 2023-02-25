@@ -8,5 +8,8 @@
   "About": "О сайте",
   "Login": "Войти",
   "Enter Password": "Введите Пароль",
-  "Enter Username": "Введите Имя"
+  "Enter Username": "Введите Имя",
+  "Authorization": "Авторизация",
+  "Wrong Username or Password": "Неверный Логин или Пароль",
+  "Logout": "Выйти"
 }
