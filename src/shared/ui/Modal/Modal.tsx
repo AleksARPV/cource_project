@@ -35,7 +35,7 @@ export const Modal = (props: ModalProps) => {
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true)
-            setIsMounted(false)
+            // setIsMounted(false)
             timerRef.current = setTimeout(() => {
                 onClose()
                 setIsClosing(false)
