@@ -3,7 +3,7 @@ import axios from 'axios'
 import { type User, userActions } from 'entities/User'
 import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage'
 
-interface LoginByUsernameProps {
+export interface LoginByUsernameProps {
     username: string
     password: string
 }
