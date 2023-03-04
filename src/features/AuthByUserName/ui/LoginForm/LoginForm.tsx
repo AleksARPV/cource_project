@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './LoginForm.module.scss'
 import { useTranslation } from 'react-i18next'
 import { Button, ButtonType } from 'shared/ui/Button/Button'
-import { Input } from 'shared/ui/Input/Input'
+import { CustomInput } from 'shared/ui/Input/CustomInput'
 import { useSelector } from 'react-redux'
 import { memo, useCallback } from 'react'
 import { loginActions, loginReducer } from '../../model/slice/loginSlice'
@@ -17,7 +17,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch'
 
 export interface LoginFormProps {
     className?: string
-    onSuccess?: () => void
+    onSuccess: () => void
 }
 
 const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
@@ -48,7 +48,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
         <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
             <div className={classNames(cls.LoginForm, {}, [className])}>
                 <Text title={t('Authorization')}/>
-                <Input
+                <CustomInput
                     autofocus
                     placeholder={t('Enter Username')}
                     className={cls.input}
@@ -56,7 +56,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
                     onChange={onChangeUsername}
                     value={username}
                 />
-                <Input
+                <CustomInput
                     placeholder={t('Enter Password')}
                     className={cls.input}
                     type='text'

@@ -1,16 +1,16 @@
 import React from 'react'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
-import { Input } from './Input'
+import { CustomInput } from './CustomInput'
 
 export default {
-    title: 'shared/Input',
-    component: Input,
+    title: 'shared/CustomInput',
+    component: CustomInput,
     argTypes: {
         backgroundColor: { control: 'color' }
     }
-} as ComponentMeta<typeof Input>
+} as ComponentMeta<typeof CustomInput>
 
-const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />
+const Template: ComponentStory<typeof CustomInput> = (args) => <CustomInput {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {

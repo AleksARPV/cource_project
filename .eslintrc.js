@@ -35,9 +35,12 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         'i18next/no-literal-string': ['warn', {
             markupOnly: true
-        }]
+        }],
+        'no-undef': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off'
     },
     globals: {
-        __IS_DEV__: true
+        __IS_DEV__: true,
+        __API__: true
     }
 }

@@ -11,8 +11,7 @@ interface InputProps extends HTMLInputProps {
     autofocus?: boolean
 }
 
-// eslint-disable-next-line react/display-name
-export const Input = memo((props: InputProps) => {
+export const CustomInput = memo((props: InputProps) => {
     const {
         className,
         value,
@@ -23,7 +22,7 @@ export const Input = memo((props: InputProps) => {
         ...otherProps
     } = props
 
-    const ref = useRef<HTMLInputElement>()
+    const ref = useRef<any>()
     const [isFocused, setIsFocused] = useState(false)
     const [caretPosition, setCaretPosition] = useState(0)
 
