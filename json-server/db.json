@@ -26,6 +26,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Alexey",
+    "lastname": "Piskarev",
+    "age": 22,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg"
   }
 }
