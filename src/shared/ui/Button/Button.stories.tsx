@@ -51,6 +51,13 @@ Outline.args = {
     theme: ButtonType.OUTLINE
 }
 
+export const OutlineInverted = Template.bind({})
+OutlineInverted.args = {
+    children: 'Text',
+    theme: ButtonType.OUTLINE_INVERTED
+}
+OutlineInverted.decorators = [ThemeDecorator(Theme.DARK)]
+
 export const OutlineDark = Template.bind({})
 OutlineDark.args = {
     children: 'Text',

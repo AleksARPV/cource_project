@@ -6,6 +6,8 @@ export enum ButtonType {
     CLEAR = 'clear',
     CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
+    OUTLINE_INVERTED = 'outlineInverted',
+    OUTLINE_RED = 'outlineRed',
     BACKGROUND = 'background',
     BACKGROUND_INVERTED = 'backgroundInverted'
 }
@@ -38,14 +40,13 @@ export const Button: FC<CustomButtonProps> = memo((props: CustomButtonProps) => 
 
     const mods: Mods = {
         [cls.square]: square,
-        [cls[size]]: true,
         [cls.disabled]: disabled
     }
 
     return (
         <button
             type={'button'}
-            className={classNames(cls.Button, mods, [className, cls[theme]])}
+            className={classNames(cls.Button, mods, [className, cls[theme], cls[size]])}
             disabled={disabled}
             {...otherProps}
         >

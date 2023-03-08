@@ -4,18 +4,27 @@
   border-radius: 10px;
 }
 
-.header {
-  display: flex;
-}
-
-.editBtn {
-  margin-left: auto;
-}
-
-.data {
-  margin-top: 30px;
-}
-
 .input {
+  margin-top: 10px;
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.avatarWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.edit {
+  border: 2px solid greenyellow;
+}
+
+.select {
   margin-top: 10px;
 }

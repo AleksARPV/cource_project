@@ -37,7 +37,8 @@ module.exports = {
             markupOnly: true
         }],
         'no-undef': 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off'
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/no-invalid-void-type': 'off'
     },
     globals: {
         __IS_DEV__: true,

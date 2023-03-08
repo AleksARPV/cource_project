@@ -1,4 +1,4 @@
-import { Button } from 'shared/ui/Button/Button'
+import { Button, ButtonType } from 'shared/ui/Button/Button'
 import { useEffect, useState } from 'react'
 
 interface BugButtonProps {
@@ -18,7 +18,7 @@ export const BugButton = ({ className }: BugButtonProps) => {
     }, [error])
 
     return (
-        <Button className={className} onClick={toThrow}>
+        <Button theme={ButtonType.OUTLINE_INVERTED} className={className} onClick={toThrow}>
             Throw Error
         </Button>
     )

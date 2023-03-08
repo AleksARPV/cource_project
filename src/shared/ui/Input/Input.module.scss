@@ -34,6 +34,10 @@
   position: relative;
 }
 
+.readonly {
+  opacity: 0.85;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;

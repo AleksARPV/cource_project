@@ -2,5 +2,15 @@
   "User Profile": "Профиль Пользователя",
   "Edit": "Редактировать",
   "Your firstname": "Ваше имя",
-  "Your lastname": "Ваша фамилия"
+  "Your lastname": "Ваша фамилия",
+  "Something went wrong!": "Что-то пошло не так!",
+  "Please refresh the page": "Пожалуйста обновите страницу",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Your age": "Ваш возраст",
+  "Your city": "Ваш город",
+  "Your Username": "Ваше имя пользователя",
+  "Your avatar link": "Ваша ссылка на аватар",
+  "Choose currency": "Выберите валюту",
+  "Choose country": "Выберите страну"
 }

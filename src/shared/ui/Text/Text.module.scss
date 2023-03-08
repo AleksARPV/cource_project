@@ -1,3 +1,8 @@
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font: var(--font-l);
   color: var(--primary-color);
@@ -16,4 +21,19 @@
   .text {
     color: var(--red-dark);
   }
+}
+
+.left {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
 }
