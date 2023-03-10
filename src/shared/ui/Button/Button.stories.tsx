@@ -103,5 +103,6 @@ SquareSizeXL.args = {
 export const Disabled = Template.bind({})
 Disabled.args = {
     children: 'Disabled',
-    theme: ButtonType.OUTLINE
+    theme: ButtonType.OUTLINE,
+    disabled: true
 }

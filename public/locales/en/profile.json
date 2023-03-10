@@ -12,5 +12,10 @@
   "Your Username": "Your Username",
   "Your avatar link": "Your avatar link",
   "Choose currency": "Choose currency",
-  "Choose country": "Choose country"
+  "Choose country": "Choose country",
+  "Server error": "Server error. Please try later",
+  "Data is missed": "Data is missed",
+  "Incorrect country": "Incorrect country",
+  "Incorrect age": "Incorrect age",
+  "Please enter your firstname and lastname": "Please enter your firstname and lastname"
 }

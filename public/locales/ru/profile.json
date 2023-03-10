@@ -12,5 +12,10 @@
   "Your Username": "Ваше имя пользователя",
   "Your avatar link": "Ваша ссылка на аватар",
   "Choose currency": "Выберите валюту",
-  "Choose country": "Выберите страну"
+  "Choose country": "Выберите страну",
+  "Server error": "Ошибка сервера. Пожалуйста попробуйте позднее",
+  "Data is missed": "Отсутствуют данные",
+  "Incorrect country": "Некорректная страна",
+  "Incorrect age": "Некорректный возраст",
+  "Please enter your firstname and lastname": "Пожалуйста введите Вашу имя и фамилию"
 }
