@@ -23,13 +23,13 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
+        '@typescript-eslint/indent': 'off',
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx']
         }],
         'import/no-unresolved': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         'react/react-in-jsx-scope': 'off',
-        '@typescript-eslint/indent': [2, 4],
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/naming-convention': 'off',

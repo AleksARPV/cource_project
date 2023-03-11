@@ -1,23 +1,16 @@
 import type webpack from 'webpack'
 import { type BuildOptions } from './types/config'
 import { buildCssLoaders } from './loaders/buildCssLoaders'
+import { buildBabelLoader } from './loaders/buildBabelLoader'
 
-export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders (options: BuildOptions): webpack.RuleSetRule[] {
+    const { isDev } = options
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack']
     }
 
-    const babelLoader = {
-        test: /\.(js|jsx|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env']
-            }
-        }
-    }
+    const babelLoader = buildBabelLoader(options)
 
     const cssLoaders = buildCssLoaders(isDev)
 
