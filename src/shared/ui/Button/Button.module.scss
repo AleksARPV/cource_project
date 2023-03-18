@@ -2,6 +2,18 @@
   cursor: pointer;
   padding: 6px 15px;
   border-radius: 5px;
+
+  &:hover {
+    scale: 1.1;
+    opacity: 0.7;
+    fill-opacity: 0.7;
+    stroke-opacity: 0.7;
+    transition-duration: 0.4s;
+  }
+}
+
+.Button:not(:hover) {
+  transition-duration: 0.4s;
 }
 
 .clear,

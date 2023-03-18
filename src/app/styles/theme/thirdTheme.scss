@@ -1,8 +1,11 @@
 .app_third_theme {
-  --bg-color: #01a2f8;
+  --bg-color: #008ed9;
   --inverted-bg-color: #f4f8fb;
   --primary-color: #f4f8fb;
   --secondary-color: #01d0a0;
   --inverted-primary-color: #01a2f8;
   --inverted-secondary-color: #01d0a0;
+  --skeleton-color: rgb(255 255 255 / 60%);
+  --skeleton-shadow: rgb(0 0 0 / 60%);
+  --code-bg: rgb(128 128 128 / 60%);
 }
