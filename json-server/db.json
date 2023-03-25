@@ -102,6 +102,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "pspWyXa"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "1234",
+      "id": "FSKj_K1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test123",
+      "id": "JE0YhIL"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test",
+      "id": "16WttP4"
     }
   ],
   "users": [
@@ -109,23 +133,39 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://kartinkin.net/uploads/posts/2022-03/1646196558_17-kartinkin-net-p-kartinki-khakera-22.jpg"
     }
   ],
-  "profile": {
-    "firstname": "Alexey",
-    "lastname": "Piskarev",
-    "age": 33,
-    "currency": "USD",
-    "country": "USA",
-    "city": "Los Angeles",
-    "username": "admin",
-    "avatar": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "Alexey",
+      "lastname": "Piskarev",
+      "age": 33,
+      "currency": "USD",
+      "country": "USA",
+      "city": "Los Angeles",
+      "username": "ITAdmin",
+      "avatar": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg"
+    },
+    {
+      "id": "2",
+      "firstname": "Nick",
+      "lastname": "De Vris",
+      "age": 23,
+      "currency": "USD",
+      "country": "USA",
+      "city": "New York",
+      "username": "user",
+      "avatar": "https://kartinkin.net/uploads/posts/2022-03/1646196558_17-kartinkin-net-p-kartinki-khakera-22.jpg"
+    }
+  ]
 }
