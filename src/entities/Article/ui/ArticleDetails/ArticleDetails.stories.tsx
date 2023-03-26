@@ -7,7 +7,7 @@ import { type Article } from 'entities/Article'
 import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article'
 
 export default {
-    title: 'entity/ArticleDetails',
+    title: 'entities/ArticleDetails',
     component: ArticleDetails,
     argTypes: {
         backgroundColor: { control: 'color' }
@@ -21,6 +21,11 @@ const article: Article = {
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
+    user: {
+        id: '1',
+        username: 'Admin',
+        avatar: 'https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg'
+    },
     type: [ArticleType.IT],
     blocks: [
         {
