@@ -15,6 +15,8 @@ module.exports = {
     rules: {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/prefer-ts-expect-error': 'off',
         '@typescript-eslint/restrict-plus-operands': 'off',
         '@typescript-eslint/no-dynamic-delete': 'off',
         'react/display-name': 'off',
