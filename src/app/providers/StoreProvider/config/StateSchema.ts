@@ -15,10 +15,12 @@ import { type ArticleDetailsSchema } from 'entities/Article'
 import { type ArticleDetailsCommentsSchema } from 'pages/ArticlesDetailsPage'
 import { type AddCommentFormSchema } from 'features/AddCommentForm'
 import { type ArticlesPageSchema } from 'pages/ArticlesPage'
+import { type ScrollSaveSchema } from 'widgets/ScrollSave'
 
 export interface StateSchema {
     counter: CounterSchema
     user: UserSchema
+    scrollSave: ScrollSaveSchema
     loginForm?: LoginSchema
     profile?: ProfileSchema
     articleDetails?: ArticleDetailsSchema
