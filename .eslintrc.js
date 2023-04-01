@@ -14,6 +14,8 @@ module.exports = {
     plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint'],
     rules: {
         '@typescript-eslint/no-misused-promises': 'off',
+        'n/no-callback-literal': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/prefer-ts-expect-error': 'off',

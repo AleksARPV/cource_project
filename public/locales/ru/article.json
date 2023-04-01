@@ -4,5 +4,18 @@
   "Comments": "Комментарии",
   "There are no comments yet": "Комментарии пока отсутствуют",
   "Read more": "Читать далее ...",
-  "Back to article list": "Назад к списку статей"
+  "Back to article list": "Назад к списку статей",
+  "Sort by": "Сортировать по",
+  "Search": "Поиск",
+  "Sort in": "Фильтровать по",
+  "increasing order": "возрастанию",
+  "decreasing order": "убыванию",
+  "creation date": "дате создания",
+  "title": "заголовку",
+  "views": "просмотрам",
+  "IT": "IT",
+  "Economics": "Экономика",
+  "Science": "Наука",
+  "All": "Все",
+  "Articles no found": "Статьи не найдены"
 }
