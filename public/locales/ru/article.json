@@ -18,5 +18,8 @@
   "Science": "Наука",
   "All": "Все",
   "Articles no found": "Статьи не найдены",
-  "Recommending": "Рекомендуем"
+  "Recommending": "Рекомендуем",
+  "Edit": "Редактировать",
+  "Edit article with ID = ": "Редактировать статью с ID = ",
+  "Create new article": "Создать новую статью"
 }

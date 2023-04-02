@@ -18,5 +18,8 @@
   "Science": "Science",
   "All": "All",
   "Articles no found": "Articles not found",
-  "Recommending": "Recommending"
+  "Recommending": "Recommending",
+  "Edit": "Edit",
+  "Edit article with ID = ": "Edit article with ID = ",
+  "Create new article": "Create new article"
 }
