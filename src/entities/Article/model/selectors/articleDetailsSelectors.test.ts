@@ -1,9 +1,5 @@
 import { type StateSchema } from 'app/providers/StoreProvider'
-import {
-    getArticleDetailsData,
-    getArticleDetailsError,
-    getArticleDetailsIsLoading
-} from 'entities/Article/model/selectors/articleDetailsSelectors'
+import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from './articleDetailsSelectors'
 
 const data = {
     id: '1',

@@ -1,5 +1,5 @@
 import { type StateSchema } from 'app/providers/StoreProvider'
-import { getLoginError } from 'features/AuthByUserName/model/selectors/getLoginError/getLoginError'
+import { getLoginError } from './getLoginError'
 
 describe('getLoginError', () => {
     test('Should return error', () => {

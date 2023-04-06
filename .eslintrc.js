@@ -11,7 +11,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module'
     },
-    plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint'],
+    plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint', 'for-project-course-plugin'],
     rules: {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/restrict-template-expressions': 'off',
@@ -45,7 +45,8 @@ module.exports = {
         }],
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
-        '@typescript-eslint/no-invalid-void-type': 'off'
+        '@typescript-eslint/no-invalid-void-type': 'off',
+        'for-project-course-plugin/path-cheker': 'error'
     },
     globals: {
         __IS_DEV__: true,

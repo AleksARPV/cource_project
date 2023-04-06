@@ -1,5 +1,4 @@
-import { type ProfileInterface } from 'entities/Profile'
-import { ValidateProfileError } from 'entities/Profile/model/types/profile'
+import { type ProfileInterface, ValidateProfileError } from '../../types/profile'
 
 export const validateProfileData = (profile?: ProfileInterface) => {
     if (!profile) {

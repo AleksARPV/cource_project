@@ -1,5 +1,5 @@
 import { TestAsyncThunk } from 'shared/config/tests/testAsyncThunk/testAsyncThunk'
-import { fetchArticleById } from 'entities/Article/model/services/fetchArticleById/fetchArticleById'
+import { fetchArticleById } from './fetchArticleById'
 
 describe('fetchArticleById.test', () => {
     test('Return success', async () => {

@@ -1,5 +1,5 @@
 import { type StateSchema } from 'app/providers/StoreProvider'
-import { getLoginLoader } from 'features/AuthByUserName/model/selectors/getLoginLoader/getLoginLoader'
+import { getLoginLoader } from './getLoginLoader'
 
 describe('getLoginLoader', () => {
     test('Should return loader', () => {
