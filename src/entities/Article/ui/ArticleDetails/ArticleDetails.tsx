@@ -22,6 +22,7 @@ import { type ArticleBlock, ArticleBlockType } from '../../model/types/article'
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent'
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent'
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent'
+import { HStack, VStack } from 'shared/ui/Stack'
 
 interface ArticleDetailsProps {
     className?: string
@@ -43,11 +44,11 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     const renderBlock = useCallback((block: ArticleBlock) => {
         switch (block.type) {
         case ArticleBlockType.CODE:
-            return <ArticleCodeBlockComponent key={block.id} className={cls.block} block={block}/>
+            return <ArticleCodeBlockComponent key={block.id} block={block}/>
         case ArticleBlockType.IMAGE:
-            return <ArticleImageBlockComponent key={block.id} className={cls.block} block={block}/>
+            return <ArticleImageBlockComponent key={block.id} block={block}/>
         case ArticleBlockType.TEXT:
-            return <ArticleTextBlockComponent key={block.id} className={cls.block} block={block}/>
+            return <ArticleTextBlockComponent key={block.id} block={block}/>
         default:
             return null
         }
@@ -65,10 +66,10 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         content = (
             <>
                 <Skeleton className={cls.avatar} width={150} height={150} border={'50%'}/>
-                <Skeleton className={cls.title} width={300} height={24}/>
-                <Skeleton className={cls.skeleton} width={600} height={30}/>
-                <Skeleton className={cls.skeleton} width={'100%'} height={300}/>
-                <Skeleton className={cls.skeleton} width={'100%'} height={300}/>
+                <Skeleton width={300} height={24}/>
+                <Skeleton width={600} height={30}/>
+                <Skeleton width={'100%'} height={300}/>
+                <Skeleton width={'100%'} height={300}/>
             </>
         )
     } else if (error) {
@@ -78,18 +79,21 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     } else {
         content = (
             <>
-                <div className={cls.avatarWrapper}>
+                <HStack justify='center' max>
                     <Avatar size={200} src={article?.img} className={cls.avatar}/>
-                </div>
-                <Text size={TextSize.L} className={cls.title} title={article?.title} text={article?.subtitle}/>
-                <div className={cls.articleInfo}>
-                    <Icon Svg={EyeIcon} className={cls.icons}/>
-                    <Text text={String(article?.views)}/>
-                </div>
-                <div className={cls.articleInfo}>
-                    <Icon Svg={CalendarIcon} className={cls.icons}/>
-                    <Text text={article?.createdAt}/>
-                </div>
+                </HStack>
+                <VStack gap='8'>
+                    <Text size={TextSize.L} title={article?.title} text={article?.subtitle}/>
+                    <HStack gap='8'>
+                        <Icon Svg={EyeIcon}/>
+                        <Text text={String(article?.views)}/>
+                    </HStack>
+                    <HStack gap='8'>
+                        <Icon Svg={CalendarIcon}/>
+                        <Text text={article?.createdAt}/>
+                    </HStack>
+                </VStack>
+
                 {article?.blocks.map(renderBlock)}
             </>
         )
@@ -97,9 +101,9 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducer} removeAfterUnmount={true}>
-            <div className={classNames(cls.ArticleDetails, {}, [className])}>
+            <VStack gap='16' className={classNames(cls.ArticleDetails, {}, [className])}>
                 {content}
-            </div>
+            </VStack>
         </DynamicModuleLoader>
     )
 })

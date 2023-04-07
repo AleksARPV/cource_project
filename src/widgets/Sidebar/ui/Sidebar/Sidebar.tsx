@@ -8,6 +8,7 @@ import { BugButton } from 'app/providers/ErrorBoundary'
 import { SidebarItem } from '../SidebarItem/SidebarItem'
 import { useSelector } from 'react-redux'
 import { getSidebarItems } from '../../model/selectors/getSidebarItems'
+import { VStack } from 'shared/ui/Stack/VStack/VStack'
 
 interface SidebarProps {
     className?: string
@@ -35,7 +36,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             >
                 {collapsed ? '>' : '<'}
             </Button>
-            <div className={cls.items}>
+            <VStack gap='8' className={cls.items}>
                 {sidebarItemsList.map((item) => (
                     <SidebarItem
                         item={item}
@@ -43,7 +44,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                         collapsed={collapsed}
                     />
                 ))}
-            </div>
+            </VStack>
             <BugButton className={cls.bugBtn}/>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
