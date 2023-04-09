@@ -42,7 +42,7 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         'i18next/no-literal-string': ['warn', {
             markupOnly: true,
-            ignoreAttribute: ['justify', 'align', 'direction', 'gap', 'role']
+            ignoreAttribute: ['justify', 'align', 'direction', 'gap', 'role', 'as']
         }],
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
