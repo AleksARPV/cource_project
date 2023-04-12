@@ -35,6 +35,6 @@ export const CountrySelect = memo(({ className, value, onChange, readonly }: Cou
         className={classNames('', {}, [className])}
         items={options}
         readonly={readonly}
-        direction={'top'}
+        direction={'top right'}
     />
 })

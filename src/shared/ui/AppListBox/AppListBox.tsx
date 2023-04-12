@@ -4,14 +4,13 @@ import cls from './AppListBox.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Button } from '../Button/Button'
 import { HStack } from '../Stack'
+import { type DropdownDirection } from '../../types/ui'
 
 export interface ListBoxItem {
     value: string
     content: ReactNode
     disabled?: boolean
 }
-
-type DropdownDirection = 'top' | 'bottom'
 
 interface ListBoxProps {
     items?: ListBoxItem[]
@@ -25,12 +24,14 @@ interface ListBoxProps {
 }
 
 const mapDirectionClass: Record<DropdownDirection, string> = {
-    bottom: cls.optionBottom,
-    top: cls.optionTop
+    'bottom left': cls.optionBottomLeft,
+    'bottom right': cls.optionBottomRight,
+    'top right': cls.optionTopRight,
+    'top left': cls.optionTopLeft
 }
 
 export function AppListBox (props: ListBoxProps) {
-    const { className, items, defaultValue, value, onChange, readonly, direction = 'bottom', label } = props
+    const { className, items, defaultValue, value, onChange, readonly, direction = 'bottom right', label } = props
     const [selectedPerson, setSelectedPerson] = useState()
 
     const optionsClasses = [
