@@ -2,13 +2,13 @@ import React, { memo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Page } from 'widgets/Page/Page'
 
-const AboutPage = memo(() => {
-    const { t } = useTranslation('about')
+const AdminPanelPage = memo(() => {
+    const { t } = useTranslation('admin')
     return (
         <Page>
-            {t('About')}
+            {t('Admin Panel')}
         </Page>
     )
 })
 
-export default AboutPage
+export default AdminPanelPage
