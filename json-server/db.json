@@ -787,6 +787,12 @@
       "userId": "1",
       "text": "test112",
       "id": "BxvZO9L"
+    },
+    {
+      "articleId": "5",
+      "userId": "1",
+      "text": "123aaa",
+      "id": "YpSxla1"
     }
   ],
   "users": [
@@ -814,7 +820,7 @@
       "currency": "USD",
       "country": "USA",
       "city": "Los Angeles",
-      "username": "ITAdmin",
+      "username": "ITAdmins",
       "avatar": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2021/10/20101154/abstract_money_cybercrime.jpg"
     },
     {

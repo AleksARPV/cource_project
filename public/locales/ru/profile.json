@@ -17,5 +17,6 @@
   "Data is missed": "Отсутствуют данные",
   "Incorrect country": "Некорректная страна",
   "Incorrect age": "Некорректный возраст",
-  "Please enter your firstname and lastname": "Пожалуйста введите Вашу имя и фамилию"
+  "Please enter your firstname and lastname": "Пожалуйста введите Вашу имя и фамилию",
+  "Profile not found": "Профиль не найден"
 }

@@ -1,7 +1,8 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 import { fetchProfileData } from '../services/fetchProfileData/fetchProfileData'
-import { type ProfileInterface, type ProfileSchema } from '../types/profile'
 import { updateProfileData } from '../services/updateProfileData/updateProfileData'
+import { type ProfileSchema } from '../types/EditableProfileCardSchema'
+import { type ProfileInterface } from 'entities/Profile'
 
 const initialState: ProfileSchema = {
     data: undefined,

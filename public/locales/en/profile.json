@@ -17,5 +17,6 @@
   "Data is missed": "Data is missed",
   "Incorrect country": "Incorrect country",
   "Incorrect age": "Incorrect age",
-  "Please enter your firstname and lastname": "Please enter your firstname and lastname"
+  "Please enter your firstname and lastname": "Please enter your firstname and lastname",
+  "Profile not found": "Profile not found"
 }
