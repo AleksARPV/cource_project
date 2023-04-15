@@ -28,7 +28,7 @@ module.exports = {
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/consistent-type-assertions': 'off',
         'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
+        'react/jsx-indent-props': 'off',
         indent: [2, 4],
         '@typescript-eslint/indent': 'off',
         'react/jsx-filename-extension': [2, {
@@ -42,7 +42,7 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         'i18next/no-literal-string': ['warn', {
             markupOnly: true,
-            ignoreAttribute: ['justify', 'align', 'direction', 'gap', 'role', 'as']
+            ignoreAttribute: ['justify', 'align', 'direction', 'gap', 'role', 'as', 'data-testid']
         }],
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
