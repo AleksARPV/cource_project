@@ -793,6 +793,24 @@
       "userId": "1",
       "text": "123aaa",
       "id": "YpSxla1"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "new comment",
+      "id": "vm6B4tB"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "one new comment",
+      "id": "xglUlZt"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "11",
+      "id": "1719FE9"
     }
   ],
   "users": [
