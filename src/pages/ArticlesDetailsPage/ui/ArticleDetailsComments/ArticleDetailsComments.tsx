@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames'
-import { memo, useCallback } from 'react'
+import { memo, Suspense, useCallback } from 'react'
 import { Text, TextSize } from 'shared/ui/Text/Text'
 import { AddCommentForm } from 'features/AddCommentForm'
 import { CommentList } from 'entities/Comment'
@@ -15,7 +15,7 @@ import { VStack } from 'shared/ui/Stack'
 
 interface ArticleDetailsCommentsProps {
     className?: string
-    id: string
+    id?: string
 }
 
 export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) => {
@@ -36,7 +36,9 @@ export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) 
     return (
         <VStack gap='16' max className={classNames('', {}, [className])}>
             <Text size={TextSize.L} title={t('Comments')}/>
-            <AddCommentForm onSendComment={onSendComment}/>
+            <Suspense fallback={''}>
+                <AddCommentForm onSendComment={onSendComment}/>
+            </Suspense>
             <CommentList isLoading={commentsIsLoading} comments={comments}/>
         </VStack>
     )
