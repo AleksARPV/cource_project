@@ -14,11 +14,11 @@ import { getProfileError } from '../../model/selectors/getProfileError/getProfil
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly'
 import { getProfileValidateErrors } from '../../model/selectors/getProfileValidateErrors/getProfileValidateErrors'
 import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData'
-import { ValidateProfileError } from '../../model/types/EditableProfileCardSchema'
 import { profileActions, profileReducer } from '../../model/slice/profileSlice'
 import { ProfileCard } from 'entities/Profile'
 import { DynamicModuleLoader, type ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader'
+import { ValidateProfileError } from '../../model/consts/constsEditableProfileCard'
 
 interface EditableProfileCardProps {
     className?: string

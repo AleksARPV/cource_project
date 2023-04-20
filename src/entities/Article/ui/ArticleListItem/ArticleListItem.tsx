@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import { type HTMLAttributeAnchorTarget, memo } from 'react'
 import cls from './ArticleListItem.module.scss'
-import { type Article, ArticleBlockType, type ArticleTextBlock, ArticleView } from '../../model/types/article'
+import { type Article, type ArticleTextBlock } from '../../model/types/article'
 import { Text } from 'shared/ui/Text/Text'
 import { Icon } from 'shared/ui/Icon/Icon'
 import EyeIcon from 'shared/assets/icons/eye.svg'
@@ -12,6 +12,7 @@ import { Button, ButtonType } from 'shared/ui/Button/Button'
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent'
 import { RoutePath } from 'shared/config/routeConfig/routeConfig'
 import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { ArticleBlockType, ArticleView } from '../../model/consts/constsArticle'
 
 interface ArticleListItemProps {
     className?: string
