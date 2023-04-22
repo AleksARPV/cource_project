@@ -1,0 +1,16 @@
+.optionsList {
+  background: var(--inverted-primary-color);
+  position: absolute;
+  z-index: 10000;
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px var(--inverted-bg-color);
+}
+
+.optionItem {
+  padding: 10px 20px;
+}
+
+.checked {
+  background: var(--inverted-primary-color);
+  border-radius: 8px;
+}

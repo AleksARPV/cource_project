@@ -2,9 +2,11 @@ import { Fragment, type ReactNode, useState } from 'react'
 import { Listbox } from '@headlessui/react'
 import cls from './AppListBox.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { Button } from '../Button/Button'
-import { HStack } from '../Stack'
-import { type DropdownDirection } from '../../types/ui'
+import { Button } from '../../../Button/Button'
+import { HStack } from '../../../Stack'
+import { type DropdownDirection } from '../../../../types/ui'
+import { mapDirectionClass } from '../../styles/consts'
+import popupCls from '../../styles/popup.module.scss'
 
 export interface ListBoxItem {
     value: string
@@ -23,13 +25,6 @@ interface ListBoxProps {
     label?: string
 }
 
-const mapDirectionClass: Record<DropdownDirection, string> = {
-    'bottom left': cls.optionBottomLeft,
-    'bottom right': cls.optionBottomRight,
-    'top right': cls.optionTopRight,
-    'top left': cls.optionTopLeft
-}
-
 export function AppListBox (props: ListBoxProps) {
     const { className, items, defaultValue, value, onChange, readonly, direction = 'bottom right', label } = props
     const [selectedPerson, setSelectedPerson] = useState()
@@ -44,11 +39,11 @@ export function AppListBox (props: ListBoxProps) {
             <Listbox
                 disabled={readonly}
                 as='div'
-                className={classNames(cls.AppListBox, {}, [className])}
+                className={classNames('', {}, [className, popupCls.popup])}
                 value={value}
                 onChange={onChange}
             >
-                <Listbox.Button className={cls.trigger}>
+                <Listbox.Button className={popupCls.trigger}>
                     <Button disabled={readonly}>
                         {value ?? defaultValue}
                     </Button>
@@ -64,9 +59,9 @@ export function AppListBox (props: ListBoxProps) {
                             {({ active, selected }) => (
                                 <li
                                     className={classNames(cls.optionItem, {
-                                        [cls.active]: active,
+                                        [popupCls.active]: active,
                                         [cls.checked]: selected,
-                                        [cls.disabled]: item.disabled
+                                        [popupCls.disabled]: item.disabled
                                     }, [])}
                                 >
                                     {selected}
