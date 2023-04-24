@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint', 'for-project-course-plugin'],
     rules: {
+        '@typescript-eslint/consistent-type-imports': 'off',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/restrict-template-expressions': 'off',
         'n/no-callback-literal': 'off',
