@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames'
+import { classNames } from '@/shared/lib/classNames/classNames'
 import { memo, useCallback } from 'react'
 import cls from './ArticlesPageFilter.module.scss'
 import {
@@ -8,9 +8,9 @@ import {
     ArticleTypeTabs,
     ArticleView,
     ArticleViewSelector
-} from 'entities/Article'
+} from '@/entities/Article'
 import { articlesPageActions } from '../../model/slices/articlePageSlice'
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch'
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { useSelector } from 'react-redux'
 import {
     getArticlesPageOrder,
@@ -20,11 +20,11 @@ import {
     getArticlesPageView
 } from '../../model/selectors/articlesPageSelectors'
 import { useTranslation } from 'react-i18next'
-import { Card } from 'shared/ui/Card/Card'
-import { CustomInput } from 'shared/ui/CustomInput/CustomInput'
-import { type SortOrder } from 'shared/types'
+import { Card } from '@/shared/ui/Card/Card'
+import { CustomInput } from '@/shared/ui/CustomInput/CustomInput'
+import { type SortOrder } from '@/shared/types'
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList'
-import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce'
+import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce'
 
 interface ArticlesPageFilterProps {
     className?: string

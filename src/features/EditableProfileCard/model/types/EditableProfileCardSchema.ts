@@ -1,4 +1,4 @@
-import { type ProfileInterface } from 'entities/Profile'
+import { type ProfileInterface } from '@/entities/Profile'
 import { type ValidateProfileError } from '../consts/constsEditableProfileCard'
 
 export interface ProfileSchema {

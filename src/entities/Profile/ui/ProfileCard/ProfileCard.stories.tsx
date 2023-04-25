@@ -1,8 +1,8 @@
 import React from 'react'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
 import { ProfileCard } from './ProfileCard'
-import { Country } from 'entities/Country'
-import { Currency } from 'entities/Currency'
+import { Country } from '@/entities/Country'
+import { Currency } from '@/entities/Currency'
 import avatar_icon from '../../../../shared/assets/mic/avatar_profile.jpg'
 
 export default {

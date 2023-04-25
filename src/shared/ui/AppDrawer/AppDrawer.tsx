@@ -1,10 +1,10 @@
-import { classNames, type Mods } from 'shared/lib/classNames/classNames'
+import { classNames, type Mods } from '@/shared/lib/classNames/classNames'
 import { memo, type ReactNode } from 'react'
 import cls from './AppDrawer.module.scss'
-import { useTheme } from 'app/providers/ThemeProvider'
+import { useTheme } from '@/app/providers/ThemeProvider'
 import { Portal } from '../Portal/Portal'
 import { Overlay } from '../Overlay/Overlay'
-import { useModal } from 'shared/lib/hooks/useModal/useModal'
+import { useModal } from '@/shared/lib/hooks/useModal/useModal'
 
 interface AppDrawerProps {
     className?: string

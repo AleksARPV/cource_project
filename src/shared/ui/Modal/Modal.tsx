@@ -1,10 +1,10 @@
-import { classNames, type Mods } from 'shared/lib/classNames/classNames'
+import { classNames, type Mods } from '@/shared/lib/classNames/classNames'
 import cls from './Modal.module.scss'
 import React, { type ReactNode } from 'react'
 import { Portal } from '../Portal/Portal'
-import { useTheme } from 'app/providers/ThemeProvider'
+import { useTheme } from '@/app/providers/ThemeProvider'
 import { Overlay } from '../Overlay/Overlay'
-import { useModal } from 'shared/lib/hooks/useModal/useModal'
+import { useModal } from '@/shared/lib/hooks/useModal/useModal'
 
 interface ModalProps {
     className?: string
@@ -48,10 +48,8 @@ export const Modal = (props: ModalProps) => {
         <Portal>
             <div className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}>
                 <Overlay onClick={close}/>
-                <div className={cls.overlay} onClick={close}>
-                    <div className={cls.content}>
-                        {children}
-                    </div>
+                <div className={cls.content}>
+                    {children}
                 </div>
             </div>
         </Portal>
