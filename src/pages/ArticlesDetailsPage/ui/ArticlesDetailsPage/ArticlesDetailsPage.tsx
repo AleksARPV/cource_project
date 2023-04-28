@@ -11,6 +11,7 @@ import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDet
 import { VStack } from '@/shared/ui/Stack'
 import { ArticleRecommendationsList } from '@/features/ArticleRecommendationsList'
 import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetailsComments'
+import { ArticleRating } from '@/features/ArticleRating'
 
 interface ArticlesDetailsPageProps {
     className?: string
@@ -24,12 +25,17 @@ const ArticlesDetailsPage = ({ className }: ArticlesDetailsPageProps) => {
     const { t } = useTranslation('article')
     const { id } = useParams<{ id: string }>()
 
+    if (!id) {
+        return null
+    }
+
     return (
         <DynamicModuleLoader reducers={reducer} removeAfterUnmount={true}>
             <Page className={classNames(cls.ArticlesDetailsPage, {}, [className])}>
                 <VStack gap='16' max>
                     <ArticleDetailsPageHeader/>
                     <ArticleDetails id={id}/>
+                    <ArticleRating articleId={id}/>
                     <ArticleRecommendationsList/>
                     <ArticleDetailsComments id={id}/>
                 </VStack>
