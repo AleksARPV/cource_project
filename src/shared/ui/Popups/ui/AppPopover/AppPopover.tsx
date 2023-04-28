@@ -20,7 +20,7 @@ export function AppPopover (props: AppPopoverProps) {
     ]
     return (
         <Popover className={classNames('', {}, [className, popupCls.popup])}>
-            <Popover.Button className={popupCls.trigger}>
+            <Popover.Button as={'div'} className={popupCls.trigger}>
                 {trigger}
             </Popover.Button>
 
