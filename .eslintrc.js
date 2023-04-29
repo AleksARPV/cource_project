@@ -57,7 +57,7 @@ module.exports = {
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-invalid-void-type': 'off',
-        'for-project-course-plugin/path-cheker': 'error'
+        'for-project-course-plugin/path-cheker': ['error', { alias: '@' }]
     },
     globals: {
         __IS_DEV__: true,
