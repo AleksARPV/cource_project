@@ -1,4 +1,4 @@
-import { Button, ButtonType } from '@/shared/ui/Button/Button'
+import { Button, ButtonType } from '../Button/Button'
 import { useEffect, useState } from 'react'
 
 interface BugButtonProps {

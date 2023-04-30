@@ -6,10 +6,10 @@ import { articlesPageReducer } from '../../model/slices/articlePageSlice'
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { Page } from '@/widgets/Page'
 import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPage/fetchNextArticlesPage'
-import { ArticlesPageFilter } from '@/pages/ArticlesPage/ui/ArticlesPageFilter/ArticlesPageFilter'
-import { ArticleInfiniteList } from '@/pages/ArticlesPage/ui/ArticleInfiniteList/ArticleInfiniteList'
+import { ArticlesPageFilter } from '../../ui/ArticlesPageFilter/ArticlesPageFilter'
+import { ArticleInfiniteList } from '../../ui/ArticleInfiniteList/ArticleInfiniteList'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect'
-import { initArticlesPage } from '@/pages/ArticlesPage/model/services/initArticlesPage/initArticlesPage'
+import { initArticlesPage } from '../../model/services/initArticlesPage/initArticlesPage'
 import { useSearchParams } from 'react-router-dom'
 
 interface ArticlesPageProps {

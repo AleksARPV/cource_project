@@ -58,6 +58,13 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-invalid-void-type': 'off',
         'for-project-course-plugin/path-cheker': ['error', { alias: '@' }],
+        'for-project-course-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing']
+            }
+        ],
         'for-project-course-plugin/public-api-imports': [
             'error',
             {
