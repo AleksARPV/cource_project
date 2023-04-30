@@ -2,8 +2,7 @@ import React from 'react'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
 import ArticlesDetailsPage from './ArticlesDetailsPage'
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator'
-import { type Article, ArticleType } from '@/entities/Article'
-import { ArticleBlockType } from '@/entities/Article/model/consts/constsArticle'
+import { type Article, ArticleBlockType, ArticleType } from '@/entities/Article'
 
 export default {
     title: 'pages/ArticlesDetailsPage/ArticlesDetailsPage',

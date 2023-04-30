@@ -57,7 +57,14 @@ module.exports = {
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-invalid-void-type': 'off',
-        'for-project-course-plugin/path-cheker': ['error', { alias: '@' }]
+        'for-project-course-plugin/path-cheker': ['error', { alias: '@' }],
+        'for-project-course-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPattern: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx']
+            }
+        ]
     },
     globals: {
         __IS_DEV__: true,
