@@ -3,6 +3,7 @@ import cls from './Page.module.scss'
 import { type MutableRefObject, type ReactNode, type UIEvent, useRef } from 'react'
 import { useInfiniteScroll } from '@/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll'
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
+// eslint-disable-next-line for-project-course-plugin/layer-imports
 import { getScrollSaveByPath, scrollSaveActions } from '@/widgets/ScrollSave'
 import { useLocation } from 'react-router-dom'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect'

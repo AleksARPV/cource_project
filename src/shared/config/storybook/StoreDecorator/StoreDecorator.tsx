@@ -4,8 +4,8 @@ import { loginReducer } from '@/features/AuthByUserName/testing'
 import { type ReducerList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 import { articleDetailsReducer } from '@/entities/Article/testing'
 import { addCommentFormReducer } from '@/features/AddCommentForm/testing'
-import { articleDetailsPageReducer } from '@/pages/ArticlesDetailsPage/model/slices'
 import { profileReducer } from '@/features/EditableProfileCard/testing'
+import { articleDetailsPageReducer } from '@/pages/ArticlesDetailsPage/testing'
 
 const defaultReducers: ReducerList = {
     loginForm: loginReducer,
