@@ -3,8 +3,8 @@ import { memo } from 'react'
 import cls from './ArticleViewSelector.module.scss'
 import PlateIcon from '@/shared/assets/icons/plate.svg'
 import BurgerIcon from '@/shared/assets/icons/burger.svg'
-import { Button, ButtonType } from '@/shared/ui/Button/Button'
-import { Icon } from '@/shared/ui/Icon/Icon'
+import { Button, ButtonType } from '@/shared/ui/Button'
+import { Icon } from '@/shared/ui/Icon'
 import { ArticleView } from '../../model/consts/constsArticle'
 
 interface ArticleViewSelectorProps {

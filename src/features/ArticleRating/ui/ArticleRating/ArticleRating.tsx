@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { useArticleRating, useRateArticle } from '../../api/ArticleRatingApi'
 import { useSelector } from 'react-redux'
 import { getUserAuthData } from '@/entities/User'
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton'
+import { Skeleton } from '@/shared/ui/Skeleton'
 
 export interface ArticleRatingProps {
     className?: string

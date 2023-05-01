@@ -3,12 +3,11 @@ import cls from './Sidebar.module.scss'
 import React, { memo, useState } from 'react'
 import { ThemeSwitcher } from '@/features/ThemeSwitcher'
 import { LangSwitcher } from '@/features/LangSwitcher'
-import { Button, ButtonSize, ButtonType } from '@/shared/ui/Button/Button'
+import { Button, ButtonSize, ButtonType } from '@/shared/ui/Button'
 import { SidebarItem } from '../SidebarItem/SidebarItem'
 import { useSelector } from 'react-redux'
 import { getSidebarItems } from '../../model/selectors/getSidebarItems'
-import { VStack } from '@/shared/ui/Stack/VStack/VStack'
-import { BugButton } from '@/shared/ui/BugButton/BugButton'
+import { VStack } from '@/shared/ui/Stack'
 
 interface SidebarProps {
     className?: string
@@ -45,7 +44,6 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                     />
                 ))}
             </VStack>
-            <BugButton className={cls.bugBtn}/>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
                 <LangSwitcher short={collapsed} className={cls.lang}/>

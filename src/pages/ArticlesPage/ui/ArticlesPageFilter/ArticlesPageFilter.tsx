@@ -20,8 +20,8 @@ import {
     getArticlesPageView
 } from '../../model/selectors/articlesPageSelectors'
 import { useTranslation } from 'react-i18next'
-import { Card } from '@/shared/ui/Card/Card'
-import { CustomInput } from '@/shared/ui/CustomInput/CustomInput'
+import { Card } from '@/shared/ui/Card'
+import { CustomInput } from '@/shared/ui/CustomInput'
 import { type SortOrder } from '@/shared/types'
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList'
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce'
