@@ -11,9 +11,17 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module'
     },
-    plugins: ['react', 'i18next', 'react-hooks', '@typescript-eslint', 'for-project-course-plugin'],
+    plugins: [
+        'react',
+        'i18next',
+        'react-hooks',
+        '@typescript-eslint',
+        'for-project-course-plugin',
+        'unused-imports'
+    ],
     rules: {
         '@typescript-eslint/consistent-type-imports': 'off',
+        'unused-imports/no-unused-imports': 'error',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/restrict-template-expressions': 'off',
         'n/no-callback-literal': 'off',
