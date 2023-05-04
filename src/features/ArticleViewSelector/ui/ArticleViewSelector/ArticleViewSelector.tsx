@@ -5,7 +5,7 @@ import PlateIcon from '@/shared/assets/icons/plate.svg'
 import BurgerIcon from '@/shared/assets/icons/burger.svg'
 import { Button, ButtonType } from '@/shared/ui/Button'
 import { Icon } from '@/shared/ui/Icon'
-import { ArticleView } from '../../model/consts/constsArticle'
+import { ArticleView } from '@/entities/Article'
 
 interface ArticleViewSelectorProps {
     className?: string

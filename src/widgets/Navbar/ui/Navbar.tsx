@@ -11,7 +11,7 @@ import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink'
 import { HStack } from '@/shared/ui/Stack'
 import { NotificationButton } from '@/features/NotificationButton'
 import { AvatarDropdown } from '@/features/AvatarDropdown'
-import { RoutePath } from '@/shared/const/router'
+import { getRouteArticlesCreate } from '@/shared/const/router'
 
 interface NavbarProps {
     className?: string
@@ -34,7 +34,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
                 <Text theme={TextType.INVERTED} className={cls.appName} title={t('Ulbi TV Course App')}/>
-                <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.articles_create}>
+                <AppLink theme={AppLinkTheme.SECONDARY} to={getRouteArticlesCreate()}>
                     {t('Create article')}
                 </AppLink>
                 <HStack gap={'16'} className={cls.actions}>
