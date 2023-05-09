@@ -5,9 +5,10 @@ module.exports = {
         jest: true
     },
     extends: ['plugin:react/recommended', 'standard-with-typescript', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
-    overrides: [],
     parserOptions: {
+        parser: '@typescript-eslint/parser',
         project: ['./tsconfig.json'],
+        tsconfigRootDir: __dirname,
         ecmaVersion: 'latest',
         sourceType: 'module'
     },
@@ -21,6 +22,7 @@ module.exports = {
     ],
     rules: {
         '@typescript-eslint/consistent-type-imports': 'off',
+        '@typescript-eslint/method-signature-style': 'off',
         'unused-imports/no-unused-imports': 'error',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/restrict-template-expressions': 'off',
@@ -85,5 +87,12 @@ module.exports = {
         __IS_DEV__: true,
         __API__: true,
         __PROJECT__: true
-    }
+    },
+    overrides: [{
+        files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off',
+            'max-len': 'off'
+        }
+    }]
 }

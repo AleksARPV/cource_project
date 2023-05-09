@@ -765,6 +765,32 @@
           ]
         }
       ]
+    },
+    {
+      "id": "0101",
+      "title": "Economics news",
+      "subtitle": "Что нового в экономике за 2022 год?",
+      "img": "https://i.pinimg.com/originals/c7/a3/99/c7a399f79e674432b1390b21168f7eaa.jpg",
+      "views": 50422,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": []
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Что нового в экономике за 2022 год?",
+      "img": "https://i.pinimg.com/originals/c7/a3/99/c7a399f79e674432b1390b21168f7eaa.jpg",
+      "views": 50422,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "qAVb1K0"
     }
   ],
   "comments": [
@@ -845,6 +871,12 @@
       "userId": "1",
       "text": "11",
       "id": "1719FE9"
+    },
+    {
+      "articleId": "qAVb1K0",
+      "userId": "4",
+      "text": "Test case text",
+      "id": "wVeKZOQ"
     }
   ],
   "users": [
@@ -874,6 +906,15 @@
         "MANAGER"
       ],
       "avatar": "https://hrlider.ru/posts/wp-content/uploads/2019/03/header.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": ""
     }
   ],
   "profile": [
@@ -898,6 +939,17 @@
       "city": "New York",
       "username": "user",
       "avatar": "https://kartinkin.net/uploads/posts/2022-03/1646196558_17-kartinkin-net-p-kartinki-khakera-22.jpg"
+    },
+    {
+      "id": "4",
+      "firstname": "testuser",
+      "lastname": "testuser",
+      "age": 23,
+      "currency": "USD",
+      "country": "USA",
+      "city": "New York",
+      "username": "testuser",
+      "avatar": ""
     }
   ],
   "article-ratings": [
