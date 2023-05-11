@@ -20,3 +20,5 @@ describe('User login to the profile page', () => {
         cy.getByTestId('ProfileCard.Lastname').should('have.value', 'new lastname')
     })
 })
+
+export {}
